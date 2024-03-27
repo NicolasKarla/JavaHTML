@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="htttps://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <style>
+        body{
+            font-family: "Yu Gothic";
+            background-color: #3f3a3a;
+            display: flex;
+            align-items: center;
+            justify-content: center}
+        .contenedor {
+            box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.3); /* Sombra */
+
+            border-radius: 20px;
+            margin-top: 200px;
+            background-color: darkgrey;
+            display: grid;
+            justify-content: center; /* Centra ítems horizontalmente en el contenedor */
+            align-items: center; /* Centra ítems verticalmente en el contenedor */
+            height: 450px;
+            width: 450px;}
+        h1, h2{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="contenedor">
+    <h1>Welcome Page</h1>
+    <h2>Welcome user firstname lastname</h2>
+    <h2 th:text="${firstname}">first name</h2>
+    <h2 th:text="${lastname}">last name</h2>
+</div>
+
+</body>
+</html>
